@@ -5,42 +5,34 @@
 	margin: 0;
 	padding: 0;
 }
-/*
-    3. Allow percentage-based heights in the application
-  */
+
 html,
 body {
 	height: 100%;
 }
-/*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
+
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	margin: 0; /* 1 */
+	font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto, Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
-/*
-    6. Improve media defaults
-  */
+
 img,
 svg {
 	display: block;
 	max-width: 100%;
 }
-/*
-    7. Remove built-in form typography styles
-  */
+
 input,
 button,
 textarea,
 select {
 	font: inherit;
+	font-family: inherit;
 }
-/*
-    8. Avoid text overflows
-  */
+
 p,
 h1,
 h2,
@@ -49,6 +41,8 @@ h4,
 h5,
 h6 {
 	overflow-wrap: break-word;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 a {
@@ -60,4 +54,11 @@ a {
 }
 .link {
 	text-decoration: none;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 }
