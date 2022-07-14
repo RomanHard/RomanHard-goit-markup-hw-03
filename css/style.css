@@ -48,6 +48,13 @@ body {
 	color: var(--two-text-color);
 }
 
+.navigation,
+.menu,
+.list {
+	display: flex;
+	align-items: center;
+}
+
 .filter-list:current {
 	color: var(--two-text-color);
 }
