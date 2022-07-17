@@ -5,11 +5,9 @@
 }
 
 .visually-hidden {
-	position: absolute;
 	width: 1px;
 	height: 1px;
 	padding: 0;
-	margin: -1px;
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
@@ -53,6 +51,17 @@ body {
 .list {
 	display: flex;
 	align-items: center;
+	flex-direction: row;
+}
+
+.header {
+	align-items: center;
+  border-bottom: 1px solid #ECECEC;
+}
+.page-header-container {
+	display: flex;
+	padding-top: 24px;
+	margin-bottom: 25px;
 }
 
 .filter-list:current {
@@ -76,16 +85,32 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 
+	margin-right: 93px;
+
 	color: var(--two-text-color);
 }
 
+.menu-list:not(:last-child) {
+	margin-right: 50px;
+}
+
+.number-link {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.mail-group:nth-last-child()
+}
 .contact-phone-number {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.15;
 	letter-spacing: 0.02em;
 	font-style: normal;
-
+	margin-left: auto;
+	margin-right: 40px;
 	color: var(--four-text-color);
 }
 
@@ -104,9 +129,21 @@ body {
 	letter-spacing: 0.06em;
 	cursor: pointer;
 	font-family: inherit;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+	padding-right: 32px;
+	border-radius: 4px;
+	margin-bottom: 200px;
 
 	color: var(--five-text-color);
 	background: var(--two-text-color);
+}
+
+.modal-button {
+	justify-content: center;
+	margin-top: 30px;
+	
 }
 
 .modal-btn:hover {
@@ -120,22 +157,39 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	width: 696px;
 	color: var(--five-text-color);
+	padding-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
 }
 
-.container-hero {
+.container-hero,
+.hero {
 	background: var(--six-text-color);
+	text-align: center;
 }
 
 /* =======/HERO======== */
 
 /* =======MainSection======== */
+
+.section {
+	margin-top: 94px;
+	margin-bottom: 94px;
+}
+
+.my-comands {
+	background-color: #F5F4FA;
+}
 .advantage {
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 	color: var(--one-text-color);
 }
 
@@ -144,6 +198,8 @@ body {
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
+	margin-top: 30px;
 	color: var(--one-text-color);
 }
 
@@ -153,6 +209,13 @@ body {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	color: var(--one-text-color);
+	margin-bottom: 4px;
+}
+.media-list-me {
+	font-size: 14px;
+	line-height: 2;
+	letter-spacing: 0.03em;
+	color: #757575;
 }
 
 .media-list {
@@ -163,13 +226,22 @@ body {
 	color: #757575;
 }
 
+.suptitle-no {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--one-text-color);
+}
+
 .suptitle {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
-
+	margin-bottom: 50px;
 	color: var(--one-text-color);
 }
 
@@ -182,28 +254,84 @@ body {
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
-
+	justify-content: center;
 	color: var(--one-text-color);
+	padding-right: 8px;
+	text-align: center;
+
 }
+.filtres {
+	display: flex;
+
+	justify-content: center;
+  }
+
+  .portfolio .filtres li:not(:last-child) {
+	margin-right: 8px;
+  }
+
 
 .filter-list:focus,
 .filter-list:hover {
 	background: var(--two-text-color);
 	color: var(--five-text-color);
 }
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: ((100%-2 * 60)/3);
+}
+
+.list-comand {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: ((100%-3 * 90)/4);
+}
+.list-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-bottom: 34px;
+}
+
+.advantage-list {
+	width: 270px;
+}
+
+.subscribe-card {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+  }
+
 /* =======/PORTFOLIO======== */
 
 /* =======FOTER======== */
 .container-footer {
 	background-color: var(--six-text-color);
+	display: block;
+	flex-direction: column ;
 }
+.list-container {
+	display: block;
+	flex-direction: column;
+	
+}
+.color-footer .logo {
+	margin-bottom: 20px;
+  }
 
 .adress {
-	font-family: "Roboto", "sans-serif";
 	font-style: normal;
-	color: var(--five-text-color);
 	font-size: 14px;
-	line-height: 2;
+	line-height: 1.71;
+	color: var(--five-text-color);
+	margin-bottom: 9px;
 }
 
 .logo-span-footer {
@@ -213,5 +341,27 @@ body {
 	line-height: 1.42;
 	letter-spacing: 0.03em;
 	color: var(--five-text-color);
+}
+
+.list-portfolio .example {
+	flex-basis: calc(100% / 3 - 30px);
+	margin-left: 30px;
+  
+	margin-top: 30px;
+  }
+
+.color-footer {
+	background: #2f303a;
+	padding: 60px 0;
+}
+
+.contact-number {
+	color: var(--four-text-color);
+	font-size: 14px;
+line-height: 1.5;
+}
+.contact-list {
+	margin-bottom: 9px;
+	margin-top: 9px;
 }
 /* =======/FOTER======== */

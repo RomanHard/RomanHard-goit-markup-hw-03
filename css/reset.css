@@ -15,7 +15,7 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	margin: 0; /* 1 */
-	font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto, Helvetica, Arial,
+	font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto, `lvetica, Arial,
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
@@ -31,6 +31,7 @@ textarea,
 select {
 	font: inherit;
 	font-family: inherit;
+	cursor: pointer;
 }
 
 p,
