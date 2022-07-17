@@ -286,7 +286,7 @@ body {
 .list-comand {
 	display: flex;
 	justify-content: space-between;
-	flex-basis: ((100%-3 * 90)/4);
+	padding-bottom: 94px;
 }
 .list-portfolio {
 	display: flex;
