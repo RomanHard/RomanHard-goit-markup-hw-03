@@ -112,11 +112,16 @@ body {
 	margin-left: auto;
 	margin-right: 40px;
 	color: var(--four-text-color);
+	font-style: normal;
 }
 
 .link:hover,
 .link:focus {
 	color: var(--two-text-color);
+}
+
+.link {
+	font-style: normal;
 }
 
 /* =======/Header======== */
