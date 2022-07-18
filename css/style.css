@@ -60,11 +60,12 @@ body {
 }
 .page-header-container {
 	display: flex;
-	padding-top: 24px;
-	margin-bottom: 25px;
 }
 
 .filter-list:current {
+	color: var(--two-text-color);
+}
+.filter-list.current {
 	color: var(--two-text-color);
 }
 
@@ -120,13 +121,25 @@ body {
 	color: var(--two-text-color);
 }
 
+.link-one {
+	padding: 32px 0;
+	display: block;
+}
 .link {
 	font-style: normal;
+
+	color: var(--four-text-color);
 }
 
 /* =======/Header======== */
 
 /* =======HERO======== */
+
+.hero {
+padding: 200px 0;
+background-color: var(--six-text-color);
+}
+
 .modal-btn {
 	font-weight: 700;
 	font-size: 16px;
@@ -139,10 +152,10 @@ body {
 	padding-left: 32px;
 	padding-right: 32px;
 	border-radius: 4px;
-	margin-bottom: 200px;
-
 	color: var(--five-text-color);
 	background: var(--two-text-color);
+	display: block;
+	margin: 0 auto;
 }
 
 .modal-button {
@@ -164,16 +177,9 @@ body {
 	text-transform: uppercase;
 	width: 696px;
 	color: var(--five-text-color);
-	padding-top: 200px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0;
-}
-
-
-.container-hero {
-	background: var(--six-text-color);
-	text-align: center;
 }
 
 /* =======/HERO======== */
@@ -181,8 +187,7 @@ body {
 /* =======MainSection======== */
 
 .section {
-	margin-top: 94px;
-	margin-bottom: 94px;
+	padding: 94px 0;
 }
 
 .section-one {
@@ -194,8 +199,8 @@ body {
 }
 .advantage {
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.19;
+	font-size: 14px;
+	line-height: 1.18;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -261,17 +266,16 @@ body {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
-	text-align: center;
 	letter-spacing: 0.03em;
-	justify-content: center;
 	color: var(--one-text-color);
-	padding-right: 8px;
-	text-align: center;
+	padding: 6px 22px;
+	border: none;
+	border-radius: 4px;
 
 }
 .filtres {
 	display: flex;
-
+margin-bottom: 50px;
 	justify-content: center;
   }
 
@@ -289,7 +293,6 @@ body {
 .list {
 	display: flex;
 	justify-content: space-between;
-	flex-basis: ((100%-2 * 60)/3);
 }
 
 .list-comand {
@@ -301,7 +304,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	margin-bottom: 34px;
+	margin-left: -30px;
+	margin-top: -30px;
 }
 
 .advantage-list {
@@ -319,14 +323,16 @@ body {
   }
 
   .crew-info {
+	text-align: center;
+	padding: 30px 0;
+  }
+.crew-info-li{
 	background-color: var(--five-text-color);
 	padding-top: 10px;
-	padding-bottom: 30px;
+	
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	text-align: center;
-  }
-
+}
 /* =======/PORTFOLIO======== */
 
 /* =======FOTER======== */
@@ -364,7 +370,6 @@ body {
 .list-portfolio .example {
 	flex-basis: calc(100% / 3 - 30px);
 	margin-left: 30px;
-  
 	margin-top: 30px;
   }
 
