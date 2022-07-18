@@ -259,6 +259,10 @@ background-color: var(--six-text-color);
 	color: var(--one-text-color);
 }
 
+.suptitle-we {
+	padding-top: 94px;
+}
+
 /* =======/MainSection======== */
 
 /* =======PORTFOLIO======== */
