@@ -181,6 +181,10 @@ body {
   padding: 94px 0;
 }
 
+.my-work {
+  padding-top: 0px;
+}
+
 .my-comands {
   background-color: #f5f4fa;
   padding-top: 0px;
@@ -227,15 +231,6 @@ body {
   color: var(--four-text-color);
 }
 
-.suptitle-no {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--one-text-color);
-}
-
 .suptitle {
   font-weight: 700;
   font-size: 36px;
@@ -246,6 +241,9 @@ body {
   color: var(--one-text-color);
 }
 
+.suptitle-we {
+  padding-top: 94px;
+}
 /* =======/MainSection======== */
 
 /* =======PORTFOLIO======== */
